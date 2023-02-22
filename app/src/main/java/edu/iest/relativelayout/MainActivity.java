@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 //aqui la logica que hacer al dar clic
                 //obtendremos el valor del edittext y lo asignaremos al textview inferior
                 String texto = etCanal.getText().toString();
-                Toast.makeText(MainActivity.this, "El valor era "+texto, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "El valor era " +texto, Toast.LENGTH_LONG).show();
                 tvCanal.setText(texto);
             }
         });
