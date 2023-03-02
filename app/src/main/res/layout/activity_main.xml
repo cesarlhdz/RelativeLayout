@@ -35,24 +35,26 @@
         android:layout_height="match_parent"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:background="@drawable/redondo"
         android:id="@+id/bnCanal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvCanal"
+        android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/redondo"
         android:text="Cambiar"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/tvCanal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textColor="#F1CF92" />
 
     <EditText
         android:id="@+id/etCanal"
-        android:layout_alignBottom="@id/bnCanal"
-        android:layout_alignTop="@id/bnCanal"
-        android:layout_above="@+id/tvCanal"
-        android:layout_toStartOf="@+id/bnCanal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvCanal"
+        android:layout_alignTop="@id/bnCanal"
+        android:layout_alignBottom="@id/bnCanal"
+        android:layout_toStartOf="@+id/bnCanal"
+        android:hint="Escribe canal" />
 
     <Spinner
         android:id="@+id/spProgramas"
